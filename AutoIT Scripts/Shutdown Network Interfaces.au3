@@ -22,6 +22,7 @@ Func Start()
 	ProcessWaitClose($iPID)
 
 	Local $sOutput = FileRead($sFileName)
+	FileDelete($sFileName)
 
 	Local $aArray = StringSplit(StringTrimRight(StringStripCR($sOutput), StringLen(@CRLF)), @CRLF)
 	_ArrayDelete($aArray, "0-1")
