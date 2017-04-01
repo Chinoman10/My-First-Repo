@@ -45,7 +45,7 @@ Func g2aLogin()
 	Local $oPassword = _IEGetObjById( $oG2A, "password_social2" )
 	Local $oButton = _IEGetObjByName( $oG2A, "socials_a_type" )
 
-	_IEFormElementSetValue($oUsername, "chinoman10@msn.com")
+	_IEFormElementSetValue($oUsername, "email@domain.com")
 	_IEFormElementSetValue($oPassword, "asdasd")
 
 	_IEAction( $oButton, "click" )
